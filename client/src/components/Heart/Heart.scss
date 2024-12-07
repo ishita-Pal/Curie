@@ -1,0 +1,127 @@
+@import "./../../css-config/mixins.scss";
+.wempty {
+    justify-content: center;
+    align-items: center;
+}
+
+@include md {
+    .wempty {
+        padding: 0px 100px;
+        margin-left: 20%;
+    }
+}
+
+@include lg {
+    .wempty {
+        padding:0px 150px;
+        margin-left: 30%;
+    }
+}
+
+.weempty{
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.77);
+
+}
+.wheading{
+    text-align: center;
+    margin:65px 0px;
+}
+
+@include md {
+    .weempty {
+        padding-bottom: 10px;
+        margin-left: 35%;
+        color: rgba(0, 0, 0, 0.77);
+    
+    }
+}
+
+@include lg {
+    .weempty {
+        padding-bottom: 150px;
+        margin-left: 39%;
+        color: rgba(0, 0, 0, 0.77);
+    }
+}
+.cart-productss{
+    flex-grow: 1;
+    position: relative;
+
+    .close-btnn {
+      position: absolute;
+     top:10px;
+     left: 10px;
+      cursor: pointer;
+    }
+  
+
+    .cart-productt{
+        padding: 53px 82px;
+        display: flex;
+        gap: 99px;
+
+         &:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+    
+
+        
+        .img-containerr{
+            background-color: rgba(0, 0, 0, 0.05);
+            width: 174px;
+            height: 149px;
+            flex-shrink: 0;
+            cursor: pointer;
+            img{
+                width: 100%;
+                height: 100%;
+                
+            }
+
+        }
+
+      
+
+        .prod-detailss {
+            overflow: hidden;
+            position: relative;
+            .namme {
+                cursor: pointer;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                font-size: 16px;
+                line-height: 1;
+                margin-bottom: 10px;
+                font-weight: 600;
+                display: block;
+                padding-right: 25px;
+            }
+            .close-btnn {
+                position: relative;
+                top: 30px;
+                left: 65px;
+                cursor: pointer;
+    
+            }
+            .text {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 12px;
+                font-weight: 600;
+                .highlight {
+                    color: #8e2de2;
+                }
+            }
+          
+        }
+    }
+
+  
+}
+
